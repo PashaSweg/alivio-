@@ -1,0 +1,116 @@
+.about {
+background-color: var(--wait-color);
+}
+
+.about__container {
+margin: 90px 0 0 0;
+display: flex;
+justify-content: space-between;
+align-items: center;
+column-gap: 30px;
+}
+
+.about__title {
+    max-width: 500px;
+    font-size: 50px;
+    font-weight: 700;
+    color: var(--green-color);
+    position: relative;
+}
+
+.about__title::before {
+position: absolute;
+top: -30px;
+left: 0;
+
+content: "How it works";
+font-size: 20px;
+color: var(--black-color);
+}
+
+.about__desc {
+    max-width: 600px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+/* ----------------------------cars --------------------*/
+
+
+.about-carts{
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* 1145 */
+
+
+@media (max-width:1145px) {
+    .about__container {
+       
+        align-items: start;
+        margin: 70px 0 0 0;
+        }
+
+        .about__title {
+            max-width: 500px;
+            font-size: 50px;
+        }
+
+        .about__desc {
+            max-width: 450px;
+            align-self: start;
+            margin-top: 20px;
+        
+        }
+}
+
+@media (max-width:1280px) {
+    .about-carts{
+        margin: 120px 0 0 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    .card{
+        margin: 0;
+        height: 850px;
+    }
+
+
+}
+
+@media (max-width:950px) {
+    .about__container {
+        margin: 90px 0 0 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+        padding: 0 10px;
+        }
+
+        .about__title {
+            max-width: 500px;
+            font-size: 50px;
+            
+        }
+
+        .about__desc {
+        margin: 0;
+        max-width: 750px;
+        align-self: center;
+        text-align: center;
+
+        }
+}
